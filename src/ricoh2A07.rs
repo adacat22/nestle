@@ -1,3 +1,11 @@
+/*
+ * This is the CPU the PAL version uses.
+ *
+ * "what's the difference?"
+ *
+ * See the readme file.
+ */
+
 use std::fs::File;
 use std::io::Read;
 

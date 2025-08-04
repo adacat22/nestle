@@ -4,3 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+
+[profile.release]
+strip = true
+opt-level = "z"       # for smallest size
+lto = true            # link-time optimization
+codegen-units = 0.1
+panic = "abort"       # classic Rust ;)
