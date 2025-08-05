@@ -1,0 +1,791 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.12.31-pentoo - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;-m64
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/3.31.7/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;-m64
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/3.31.7/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-B9MmRv"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-B9MmRv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-B9MmRv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_37cde/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_37cde.dir/build.make CMakeFiles/cmTC_37cde.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-B9MmRv'
+        Building C object CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64    -v -o CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-pc-linux-gnu
+        Configured with: /var/tmp/portage/sys-devel/gcc-14.3.0/work/gcc-14.3.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/14 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14 --disable-silent-rules --disable-dependency-tracking --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/14/python --enable-languages=c,c++,fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo Hardened 14.3.0 p8' --with-gcc-major-version-only --enable-libstdcxx-time --enable-lto --disable-libstdcxx-pch --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --disable-fixed-point --enable-targets=all --enable-offload-defaulted --enable-offload-targets=nvptx-none --enable-libgomp --disable-libssp --disable-libada --enable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --with-zstd --without-isl --enable-default-pie --enable-host-pie --enable-host-bind-now --enable-default-ssp --disable-fixincludes --with-gxx-libcxx-include-dir=/usr/include/c++/v1 --with-build-config='bootstrap-O3 bootstrap-lto bootstrap-cet'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.3.0 (Gentoo Hardened 14.3.0 p8) 
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_37cde.dir/'
+         /usr/libexec/gcc/x86_64-pc-linux-gnu/14/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_37cde.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m64 -mtune=generic -march=x86-64 -version -ffunction-sections -fdata-sections -fPIC -foffload-options=-fno-stack-protector -fcf-protection -foffload-options=-fcf-protection=none -o /tmp/ccCBQZ3n.s
+        GNU C17 (Gentoo Hardened 14.3.0 p8) version 14.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 14.3.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 1735ca74a55fd1b240cba95be78dc36d
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_37cde.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o /tmp/ccCBQZ3n.s
+        GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (Gentoo 2.44 p1) 2.44.0
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_37cde
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37cde.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-pc-linux-gnu
+        Configured with: /var/tmp/portage/sys-devel/gcc-14.3.0/work/gcc-14.3.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/14 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14 --disable-silent-rules --disable-dependency-tracking --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/14/python --enable-languages=c,c++,fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo Hardened 14.3.0 p8' --with-gcc-major-version-only --enable-libstdcxx-time --enable-lto --disable-libstdcxx-pch --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --disable-fixed-point --enable-targets=all --enable-offload-defaulted --enable-offload-targets=nvptx-none --enable-libgomp --disable-libssp --disable-libada --enable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --with-zstd --without-isl --enable-default-pie --enable-host-pie --enable-host-bind-now --enable-default-ssp --disable-fixincludes --with-gxx-libcxx-include-dir=/usr/include/c++/v1 --with-build-config='bootstrap-O3 bootstrap-lto bootstrap-cet'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.3.0 (Gentoo Hardened 14.3.0 p8) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-rdynamic' '-o' 'cmTC_37cde' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_37cde.'
+         /usr/libexec/gcc/x86_64-pc-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2gV0mS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_37cde /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../.. -v CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o
+        collect2 version 14.3.0
+        /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2gV0mS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_37cde /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../.. -v CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o
+        GNU ld (Gentoo 2.44 p1) 2.44.0
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-rdynamic' '-o' 'cmTC_37cde' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_37cde.'
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64   -v -Wl,-v -rdynamic CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o -o cmTC_37cde
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-B9MmRv'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-B9MmRv']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_37cde/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_37cde.dir/build.make CMakeFiles/cmTC_37cde.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-B9MmRv']
+        ignore line: [Building C object CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64    -v -o CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /var/tmp/portage/sys-devel/gcc-14.3.0/work/gcc-14.3.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/14 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14 --disable-silent-rules --disable-dependency-tracking --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/14/python --enable-languages=c c++ fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo Hardened 14.3.0 p8' --with-gcc-major-version-only --enable-libstdcxx-time --enable-lto --disable-libstdcxx-pch --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32 m64 --disable-fixed-point --enable-targets=all --enable-offload-defaulted --enable-offload-targets=nvptx-none --enable-libgomp --disable-libssp --disable-libada --enable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --with-zstd --without-isl --enable-default-pie --enable-host-pie --enable-host-bind-now --enable-default-ssp --disable-fixincludes --with-gxx-libcxx-include-dir=/usr/include/c++/v1 --with-build-config='bootstrap-O3 bootstrap-lto bootstrap-cet']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.3.0 (Gentoo Hardened 14.3.0 p8) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_37cde.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/14/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_37cde.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m64 -mtune=generic -march=x86-64 -version -ffunction-sections -fdata-sections -fPIC -foffload-options=-fno-stack-protector -fcf-protection -foffload-options=-fcf-protection=none -o /tmp/ccCBQZ3n.s]
+        ignore line: [GNU C17 (Gentoo Hardened 14.3.0 p8) version 14.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.3.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 1735ca74a55fd1b240cba95be78dc36d]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_37cde.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o /tmp/ccCBQZ3n.s]
+        ignore line: [GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (Gentoo 2.44 p1) 2.44.0]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_37cde]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37cde.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /var/tmp/portage/sys-devel/gcc-14.3.0/work/gcc-14.3.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/14 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14 --disable-silent-rules --disable-dependency-tracking --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/14/python --enable-languages=c c++ fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo Hardened 14.3.0 p8' --with-gcc-major-version-only --enable-libstdcxx-time --enable-lto --disable-libstdcxx-pch --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32 m64 --disable-fixed-point --enable-targets=all --enable-offload-defaulted --enable-offload-targets=nvptx-none --enable-libgomp --disable-libssp --disable-libada --enable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --with-zstd --without-isl --enable-default-pie --enable-host-pie --enable-host-bind-now --enable-default-ssp --disable-fixincludes --with-gxx-libcxx-include-dir=/usr/include/c++/v1 --with-build-config='bootstrap-O3 bootstrap-lto bootstrap-cet']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.3.0 (Gentoo Hardened 14.3.0 p8) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-rdynamic' '-o' 'cmTC_37cde' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_37cde.']
+        link line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2gV0mS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_37cde /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../.. -v CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc2gV0mS.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_37cde] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o]
+        ignore line: [collect2 version 14.3.0]
+        ignore line: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2gV0mS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_37cde /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../.. -v CMakeFiles/cmTC_37cde.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o]
+        linker tool for 'C': /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib] ==> [/usr/x86_64-pc-linux-gnu/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/14;/usr/lib64;/lib64;/usr/x86_64-pc-linux-gnu/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/ld" "-v"
+      GNU ld (Gentoo 2.44 p1) 2.44.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-oEg3R6"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-oEg3R6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-oEg3R6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bb086/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bb086.dir/build.make CMakeFiles/cmTC_bb086.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-oEg3R6'
+        Building CXX object CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -m64    -v -o CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-pc-linux-gnu
+        Configured with: /var/tmp/portage/sys-devel/gcc-14.3.0/work/gcc-14.3.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/14 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14 --disable-silent-rules --disable-dependency-tracking --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/14/python --enable-languages=c,c++,fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo Hardened 14.3.0 p8' --with-gcc-major-version-only --enable-libstdcxx-time --enable-lto --disable-libstdcxx-pch --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --disable-fixed-point --enable-targets=all --enable-offload-defaulted --enable-offload-targets=nvptx-none --enable-libgomp --disable-libssp --disable-libada --enable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --with-zstd --without-isl --enable-default-pie --enable-host-pie --enable-host-bind-now --enable-default-ssp --disable-fixincludes --with-gxx-libcxx-include-dir=/usr/include/c++/v1 --with-build-config='bootstrap-O3 bootstrap-lto bootstrap-cet'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.3.0 (Gentoo Hardened 14.3.0 p8) 
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb086.dir/'
+         /usr/libexec/gcc/x86_64-pc-linux-gnu/14/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_bb086.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64 -version -ffunction-sections -fdata-sections -fPIC -foffload-options=-fno-stack-protector -fcf-protection -foffload-options=-fcf-protection=none -o /tmp/ccR81CWK.s
+        GNU C++17 (Gentoo Hardened 14.3.0 p8) version 14.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 14.3.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 8d20f384b1e4b90694ffb367a6f2249a
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb086.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccR81CWK.s
+        GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (Gentoo 2.44 p1) 2.44.0
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_bb086
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb086.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-pc-linux-gnu
+        Configured with: /var/tmp/portage/sys-devel/gcc-14.3.0/work/gcc-14.3.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/14 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14 --disable-silent-rules --disable-dependency-tracking --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/14/python --enable-languages=c,c++,fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo Hardened 14.3.0 p8' --with-gcc-major-version-only --enable-libstdcxx-time --enable-lto --disable-libstdcxx-pch --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --disable-fixed-point --enable-targets=all --enable-offload-defaulted --enable-offload-targets=nvptx-none --enable-libgomp --disable-libssp --disable-libada --enable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --with-zstd --without-isl --enable-default-pie --enable-host-pie --enable-host-bind-now --enable-default-ssp --disable-fixincludes --with-gxx-libcxx-include-dir=/usr/include/c++/v1 --with-build-config='bootstrap-O3 bootstrap-lto bootstrap-cet'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.3.0 (Gentoo Hardened 14.3.0 p8) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-rdynamic' '-o' 'cmTC_bb086' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bb086.'
+         /usr/libexec/gcc/x86_64-pc-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc17GyOU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_bb086 /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../.. -v CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o
+        collect2 version 14.3.0
+        /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc17GyOU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_bb086 /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../.. -v CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o
+        GNU ld (Gentoo 2.44 p1) 2.44.0
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-rdynamic' '-o' 'cmTC_bb086' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bb086.'
+        /usr/bin/c++  -ffunction-sections -fdata-sections -fPIC -m64   -v -Wl,-v -rdynamic CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bb086
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-oEg3R6'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14;/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu;/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/14/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-oEg3R6']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bb086/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_bb086.dir/build.make CMakeFiles/cmTC_bb086.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-oEg3R6']
+        ignore line: [Building CXX object CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -m64    -v -o CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /var/tmp/portage/sys-devel/gcc-14.3.0/work/gcc-14.3.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/14 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14 --disable-silent-rules --disable-dependency-tracking --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/14/python --enable-languages=c c++ fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo Hardened 14.3.0 p8' --with-gcc-major-version-only --enable-libstdcxx-time --enable-lto --disable-libstdcxx-pch --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32 m64 --disable-fixed-point --enable-targets=all --enable-offload-defaulted --enable-offload-targets=nvptx-none --enable-libgomp --disable-libssp --disable-libada --enable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --with-zstd --without-isl --enable-default-pie --enable-host-pie --enable-host-bind-now --enable-default-ssp --disable-fixincludes --with-gxx-libcxx-include-dir=/usr/include/c++/v1 --with-build-config='bootstrap-O3 bootstrap-lto bootstrap-cet']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.3.0 (Gentoo Hardened 14.3.0 p8) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb086.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/14/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_bb086.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64 -version -ffunction-sections -fdata-sections -fPIC -foffload-options=-fno-stack-protector -fcf-protection -foffload-options=-fcf-protection=none -o /tmp/ccR81CWK.s]
+        ignore line: [GNU C++17 (Gentoo Hardened 14.3.0 p8) version 14.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.3.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 8d20f384b1e4b90694ffb367a6f2249a]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb086.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccR81CWK.s]
+        ignore line: [GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (Gentoo 2.44 p1) 2.44.0]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_bb086]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb086.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /var/tmp/portage/sys-devel/gcc-14.3.0/work/gcc-14.3.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/14 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/14/include/g++-v14 --disable-silent-rules --disable-dependency-tracking --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/14/python --enable-languages=c c++ fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --disable-libunwind-exceptions --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo Hardened 14.3.0 p8' --with-gcc-major-version-only --enable-libstdcxx-time --enable-lto --disable-libstdcxx-pch --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32 m64 --disable-fixed-point --enable-targets=all --enable-offload-defaulted --enable-offload-targets=nvptx-none --enable-libgomp --disable-libssp --disable-libada --enable-cet --disable-systemtap --disable-valgrind-annotations --disable-vtable-verify --disable-libvtv --with-zstd --without-isl --enable-default-pie --enable-host-pie --enable-host-bind-now --enable-default-ssp --disable-fixincludes --with-gxx-libcxx-include-dir=/usr/include/c++/v1 --with-build-config='bootstrap-O3 bootstrap-lto bootstrap-cet']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.3.0 (Gentoo Hardened 14.3.0 p8) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/14/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-rdynamic' '-o' 'cmTC_bb086' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bb086.']
+        link line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc17GyOU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_bb086 /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../.. -v CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc17GyOU.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_bb086] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o]
+        ignore line: [collect2 version 14.3.0]
+        ignore line: [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc17GyOU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_bb086 /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../.. -v CMakeFiles/cmTC_bb086.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o]
+        linker tool for 'CXX': /usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/lib] ==> [/usr/x86_64-pc-linux-gnu/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/14/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/14;/usr/lib64;/lib64;/usr/x86_64-pc-linux-gnu/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/lib/gcc/x86_64-pc-linux-gnu/14/../../../../x86_64-pc-linux-gnu/bin/ld" "-v"
+      GNU ld (Gentoo 2.44 p1) 2.44.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
+      - "cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-g1svRh"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-g1svRh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_MODULE_PATH: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_THOSE_TOGGLES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-g1svRh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8c5f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d8c5f.dir/build.make CMakeFiles/cmTC_d8c5f.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-g1svRh'
+        Building C object CMakeFiles/cmTC_d8c5f.dir/src.c.o
+        /usr/bin/cc -DCOMPILER_HAS_THOSE_TOGGLES  -ffunction-sections -fdata-sections -fPIC -m64    -Werror=pointer-arith -o CMakeFiles/cmTC_d8c5f.dir/src.c.o -c /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-g1svRh/src.c
+        Linking C executable cmTC_d8c5f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8c5f.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64  -rdynamic CMakeFiles/cmTC_d8c5f.dir/src.c.o -o cmTC_d8c5f
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-g1svRh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "src/external/glfw/CMakeLists.txt:66 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-N65ggT"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-N65ggT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_MODULE_PATH: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/cmake;/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-N65ggT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d9153/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d9153.dir/build.make CMakeFiles/cmTC_d9153.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-N65ggT'
+        Building C object CMakeFiles/cmTC_d9153.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64  -o CMakeFiles/cmTC_d9153.dir/src.c.o -c /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-N65ggT/src.c
+        Linking C executable cmTC_d9153
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9153.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64  -rdynamic CMakeFiles/cmTC_d9153.dir/src.c.o -o cmTC_d9153
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-N65ggT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "src/external/glfw/CMakeLists.txt:204 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-L2E3Sa"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-L2E3Sa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/cmake;/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-L2E3Sa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c37d0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c37d0.dir/build.make CMakeFiles/cmTC_c37d0.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-L2E3Sa'
+        Building C object CMakeFiles/cmTC_c37d0.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=gnu99 -o CMakeFiles/cmTC_c37d0.dir/CheckFunctionExists.c.o -c /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-L2E3Sa/CheckFunctionExists.c
+        Linking C executable cmTC_c37d0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c37d0.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_c37d0.dir/CheckFunctionExists.c.o -o cmTC_c37d0  /usr/lib64/libX11.so /usr/lib64/libXext.so
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-L2E3Sa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "src/external/glfw/CMakeLists.txt:204 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-wauj9D"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-wauj9D"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/cmake;/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-wauj9D'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_983af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_983af.dir/build.make CMakeFiles/cmTC_983af.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-wauj9D'
+        Building C object CMakeFiles/cmTC_983af.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu99 -o CMakeFiles/cmTC_983af.dir/CheckFunctionExists.c.o -c /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-wauj9D/CheckFunctionExists.c
+        Linking C executable cmTC_983af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_983af.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_983af.dir/CheckFunctionExists.c.o -o cmTC_983af
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-wauj9D'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "src/external/glfw/CMakeLists.txt:204 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-UaUfG0"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-UaUfG0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/cmake;/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-UaUfG0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bedd2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bedd2.dir/build.make CMakeFiles/cmTC_bedd2.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-UaUfG0'
+        Building C object CMakeFiles/cmTC_bedd2.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -o CMakeFiles/cmTC_bedd2.dir/CheckFunctionExists.c.o -c /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-UaUfG0/CheckFunctionExists.c
+        Linking C executable cmTC_bedd2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bedd2.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_bedd2.dir/CheckFunctionExists.c.o -o cmTC_bedd2
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-UaUfG0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "src/external/glfw/CMakeLists.txt:204 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-3KZw0B"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-3KZw0B"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/cmake;/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-3KZw0B'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ac9d5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ac9d5.dir/build.make CMakeFiles/cmTC_ac9d5.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-3KZw0B'
+        Building C object CMakeFiles/cmTC_ac9d5.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=remove -std=gnu99 -o CMakeFiles/cmTC_ac9d5.dir/CheckFunctionExists.c.o -c /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-3KZw0B/CheckFunctionExists.c
+        Linking C executable cmTC_ac9d5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac9d5.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_ac9d5.dir/CheckFunctionExists.c.o -o cmTC_ac9d5
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-3KZw0B'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "src/external/glfw/CMakeLists.txt:204 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-c4bwtN"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-c4bwtN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/cmake;/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-c4bwtN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e5ec3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e5ec3.dir/build.make CMakeFiles/cmTC_e5ec3.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-c4bwtN'
+        Building C object CMakeFiles/cmTC_e5ec3.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=shmat -std=gnu99 -o CMakeFiles/cmTC_e5ec3.dir/CheckFunctionExists.c.o -c /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-c4bwtN/CheckFunctionExists.c
+        Linking C executable cmTC_e5ec3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5ec3.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_e5ec3.dir/CheckFunctionExists.c.o -o cmTC_e5ec3
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-c4bwtN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:750 (check_library_exists)"
+      - "src/external/glfw/CMakeLists.txt:204 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-56SCCQ"
+      binary: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-56SCCQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/cmake;/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-56SCCQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8e54c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8e54c.dir/build.make CMakeFiles/cmTC_8e54c.dir/build
+        gmake[1]: Entering directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-56SCCQ'
+        Building C object CMakeFiles/cmTC_8e54c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=gnu99 -o CMakeFiles/cmTC_8e54c.dir/CheckFunctionExists.c.o -c /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-56SCCQ/CheckFunctionExists.c
+        Linking C executable cmTC_8e54c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e54c.dir/link.txt --verbose=1
+        /usr/bin/cc -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -ffunction-sections -fdata-sections -fPIC -m64 -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_8e54c.dir/CheckFunctionExists.c.o -o cmTC_8e54c  -lICE
+        gmake[1]: Leaving directory '/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/build/CMakeFiles/CMakeScratch/TryCompile-56SCCQ'
+        
+      exitCode: 0
+...
