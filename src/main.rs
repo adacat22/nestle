@@ -1,15 +1,16 @@
-mod ricoh;
+mod ricoh2A03;
+//mod ricoh2A07;
 
 use std::env;
-use ricoh::{CPU, load_program};
+use std::process::ExitCode;
+use ricoh2A03::{CPU, load_program};
+//use ricoh2A07::{CPU, load_program};
 
-fn main()
-{   println!("Nestle emulator - with 100% less child labor!");
-
-    let args: Vec<String> = env::args().collect();
+fn main() -> ExitCode
+{   let args: Vec<String> = env::args().collect();
     if args.len() != 2
     {   eprintln!("Usage: {} file.bin", args[0]);
-        std::process::exit(1);
+        return ExitCode::SUCCESS;
     }
 
     let filename = &args[1];
@@ -20,4 +21,6 @@ fn main()
     let mut cpu = CPU::new();
     cpu.reset();
     cpu.run();
+
+    ExitCode::SUCCESS
 }
