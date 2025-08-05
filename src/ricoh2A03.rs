@@ -29,7 +29,7 @@ pub struct CPU
     pub p: u8,
     pub running: bool,
     pub cycles: u64,
-/*
+
     pub use_illegal_opcodes: bool,  // The usage of unofficial opcodes is rare in NES games, if
                                     // (for some reason), you want to disable them, you can.
                                     //
@@ -44,7 +44,6 @@ pub struct CPU
                                     // Unused for now...
                                     //
                                     // DEFAULT: false
-*/
 }
 
 impl CPU
@@ -58,6 +57,8 @@ impl CPU
             p: 0x34,
             running: true,
             cycles: 0,
+            use_illegal_opcodes: true,
+            use_wdc_extentions: false,
         }
     }
 
