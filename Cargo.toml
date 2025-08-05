@@ -4,9 +4,11 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+raylib = "3.7"
 
 [profile.release]
-strip = true
+strip = true          # strip command
 opt-level = "z"       # for smallest size
 lto = true            # link-time optimization
 panic = "abort"       # classic Rust ;)
+codegen-units = 1     # I forgot what this does, Tharg knows

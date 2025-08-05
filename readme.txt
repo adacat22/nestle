@@ -3,6 +3,8 @@ Nestle – now with 100% less child labor!
 
 This is just an NES emulator I'm writing for fun.
 
+See https://github.com/christopherpow/nes-test-roms if you want to test this emulator
+
 ========================================
 
 ABOUT THE CPUS:

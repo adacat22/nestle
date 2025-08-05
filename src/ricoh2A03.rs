@@ -192,4 +192,3 @@ pub fn load_program(filename: &str, load_addr: u16)
         MEMORY[0xFFFD] = (load_addr >> 8) as u8;
     }
 }
-
