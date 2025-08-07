@@ -22,3 +22,9 @@ RICOH 2A07 / RP2A07 (PAL):
   * Max. Frame Rate:   50 Hz  
   * Audio:             Same 5 channels, but with different timing and frequency tuning  
   * Notes:             Used in European/Australian consoles. Slower timing affects game speed and music pitch.
+
+========================================
+
+TODO:
+  1. Implement UNIF (Universal NES Image Format) support
+  2. Fix INES files loading from 0x00 (executes the header text)

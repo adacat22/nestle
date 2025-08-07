@@ -1,0 +1,9 @@
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/lib64/libraylib.a
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/include/raylib.h
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/include/rlgl.h
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/include/physac.h
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/include/raymath.h
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/include/raudio.h
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/lib64/pkgconfig/raylib.pc
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/lib64/cmake/raylib/raylib-config-version.cmake
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/lib64/cmake/raylib/raylib-config.cmake

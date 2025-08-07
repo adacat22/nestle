@@ -1,0 +1,82 @@
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Warning (dev) at /usr/share/cmake/Modules/FindOpenGL.cmake:415 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib64/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib64/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib64/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  cmake/LibraryConfigurations.cmake:20 (find_package)
+  src/CMakeLists.txt:56 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_ASM_COMPILER
+    CMAKE_ASM_FLAGS
+
+
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/core.c: In function 'OpenURL':
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/core.c:3085:9: warning: ignoring return value of 'system' declared with attribute 'warn_unused_result' [-Wunused-result]
+ 3085 |         system(cmd);
+      |         ^~~~~~~~~~~
+In file included from /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/raudio.c:215:
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h: In function 'jar_mod_load_file':
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:1541:13: warning: ignoring return value of 'fread' declared with attribute 'warn_unused_result' [-Wunused-result]
+ 1541 |             fread(modctx->modfile, fsize, 1, f);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'memcopy',
+    inlined from 'jar_mod_load' at /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:1133:13:
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h: In function 'jar_mod_load':
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:125:13: note: at offset 1080 into destination object 'title' of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function 'memcopy',
+    inlined from 'jar_mod_load' at /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:1133:13:
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h: In function 'jar_mod_load':
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:125:13: note: at offset 1081 into destination object 'title' of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function 'memcopy',
+    inlined from 'jar_mod_load' at /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:1133:13:
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h: In function 'jar_mod_load':
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:125:13: note: at offset 1082 into destination object 'title' of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function 'memcopy',
+    inlined from 'jar_mod_load' at /home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:1133:13:
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h: In function 'jar_mod_load':
+/home/adam_sm/Coding/nestle/target/debug/build/raylib-sys-ca477496a4a2ab01/out/raylib/src/external/jar_mod.h:125:13: note: at offset 1083 into destination object 'title' of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~

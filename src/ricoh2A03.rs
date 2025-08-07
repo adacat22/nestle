@@ -14,7 +14,7 @@ const FLAG_Z: u8 = 0x02;
 const FLAG_I: u8 = 0x04;
 const FLAG_D: u8 = 0x08;
 const FLAG_B: u8 = 0x10;
-const FLAG_U: u8 = 0x20;
+const FLAG_U: u8 = 0x20; // Unused, 0x01 by default
 const FLAG_V: u8 = 0x40;
 const FLAG_N: u8 = 0x80;
 
@@ -33,7 +33,7 @@ pub struct CPU
     pub use_illegal_opcodes: bool,  // The usage of unofficial opcodes is rare in NES games, if
                                     // (for some reason), you want to disable them, you can.
                                     //
-                                    // Unused for now...
+                                    // Unused.
                                     //
                                     // DEFAULT: true
 
@@ -41,7 +41,7 @@ pub struct CPU
                                     // the NES was not designed to be used with a WDC (Western
                                     // Design Center) chip.
                                     //
-                                    // Unused for now...
+                                    // Unused.
                                     //
                                     // DEFAULT: false
 }
